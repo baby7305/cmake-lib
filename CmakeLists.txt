@@ -2,5 +2,6 @@ cmake_minimum_required(VERSION 3.0)
 project(hello C)
 
 set(CMAKE_C_STANDARD 11)
+SET(LIBHELLO_SRC hello.c)
 
-ADD_LIBRARY(hello SHARED hello.c)
+ADD_LIBRARY(hello SHARED ${LIBHELLO_SRC})
